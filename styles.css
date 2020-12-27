@@ -1,16 +1,18 @@
 @font-face {
-  font-family: 'Shentox';
+  font-family: "Shentox";
   font-style: normal;
   font-weight: 500;
-  src: url('https://cdn4.tnwcdn.com/assets/fonts/shentox/shentox-medium.woff') format('woff'),
-  url('https://cdn4.tnwcdn.com/assets/fonts/shentox/shentox-medium.woff2') format('woff2');
-  }
-  
-html, body {
+  src: url("https://cdn4.tnwcdn.com/assets/fonts/shentox/shentox-medium.woff")
+      format("woff"),
+    url("https://cdn4.tnwcdn.com/assets/fonts/shentox/shentox-medium.woff2")
+      format("woff2");
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  
   background-color: rgb(238, 232, 232);
 }
 
@@ -36,8 +38,9 @@ i {
   flex-direction: row;
   padding-left: 5px;
 }
+
 ul {
-  margin-top: 0px ;
+  margin-top: 0px;
   padding: 0px;
 }
 
@@ -47,15 +50,15 @@ ul {
 }
 
 .news {
- color: white;
+  color: white;
 }
 
 .nav-top .top-right {
   display: flex;
   flex-direction: row;
   position: absolute;
-  right: 0;
   top: 10px;
+  right: 0;
 }
 
 .nav-top .top-right li {
@@ -75,7 +78,7 @@ ul {
   width: 100%;
   height: 25px;
   padding: 10px 0 10px;
-  font-family: 'Shentox';
+  font-family: "Shentox";
 }
 
 .nav-bottom .bottom-left {
@@ -83,7 +86,7 @@ ul {
   flex-direction: row;
   width: 100%;
   padding-left: 5px;
-  margin-top: 5px ;
+  margin-top: 5px;
   color: rgb(156, 151, 151);
   text-transform: uppercase;
 }
@@ -96,12 +99,12 @@ ul {
 .nav-bottom .bottom-right {
   display: flex;
   flex-direction: row;
-  margin-top: 5px ;
+  margin-top: 5px;
   padding-right: 10px;
   border-left: rgb(179, 171, 171) 1px solid;
 }
 
-/* main */
+/* main section */
 
 .main-articles {
   width: 100%;
@@ -116,40 +119,43 @@ ul {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 4;
-  background: linear-gradient(132deg, rgba(255, 0, 0, 0.8) 0%, rgba(255,255,255,.01) 100%), url(assets/rcmp.jpg);
+  background: linear-gradient(
+      132deg,
+      rgba(255, 0, 0, 0.8) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    ),
+    url(assets/rcmp.jpg);
   background-size: cover;
   color: white;
   margin-bottom: 90px;
   padding-left: 10px;
- 
-  
 }
 
-.main-article svg {
-  padding: 10px;
-  padding-bottom: 70px ;
+/* TNW logo */
 
+.main-article svg {
+  padding: 10px 10px 70px 10px;
 }
 
 .category {
   font-size: 20px;
   font-weight: bolder;
-  font-family: 'Shentox';
+  font-family: "Shentox";
   color: rgb(248, 242, 242);
 }
 
-.main-article p, .main-article i {
-color: rgb(207, 201, 201);
-font-size: 18px;
+.main-article p,
+.main-article i {
+  color: rgb(207, 201, 201);
+  font-size: 18px;
 }
-
 
 .main-article h2 {
   font-size: 3vw;
   margin-top: 0;
 }
 
-.right-article-top  {
+.right-article-top {
   background: url(assets/vaccine.jpg);
   background-position: center;
   height: 264.5px;
@@ -162,48 +168,50 @@ font-size: 18px;
   background: url(assets/vaccine.jpg);
   background-position: center;
   height: 264.5px;
-  margin: 5px;
-  margin-bottom: 90px;
-  color: white;
+  margin: 5px 5px 90px 5px;
   padding-left: 10px;
+  color: white;
 }
 
-.right-article-top-content , .right-article-bottom-content {
+.right-article-top-content,
+.right-article-bottom-content {
   display: table-cell;
   vertical-align: bottom;
   height: inherit;
 }
 
-
-.right-article-top h2, .right-article-bottom h2 {
+.right-article-top h2,
+.right-article-bottom h2 {
   margin-top: 0;
 }
 
-.right-article-top p, .right-article-bottom p, .right-article-top i, .right-article-bottom i  {
+.right-article-top p,
+.right-article-bottom p,
+.right-article-top i,
+.right-article-bottom i {
   color: rgb(207, 201, 201);
   font-size: 1vw;
 }
 
+/* news articles*/
 
 span {
   margin: 5.8%;
-  color: #FF4422;
+  color: #ff4422;
   font-size: 25px;
   font-weight: 400;
 }
 
 .news-articles {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  width: 90%;
+  margin: 40px auto 50px auto;
 }
 
 .news-article {
   margin: 10px;
-  background-color: rgb(241, 236, 236)
+  background-color: rgb(241, 236, 236);
 }
 
 .news-article img {
@@ -214,12 +222,13 @@ span {
   color: grey;
 }
 
+/* funding cards */
+
 .fundings {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 90%;
-  margin: auto;
-  margin-top: 30px;
+  margin: 30px auto;
 }
 
 .funding {
@@ -239,9 +248,8 @@ span {
 }
 
 .funding h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: #FF4422;
+  margin: 0 auto 0;
+  background-color: #ff4422;
   color: white;
   padding: 11px 16px 11px 84px;
 }
@@ -249,9 +257,7 @@ span {
 .funding h2 {
   margin-top: 0;
   background-color: rgb(214, 142, 142);
-  padding: 10px;
   padding: 11px 16px 11px 84px;
-
 }
 
 .funding .description {
@@ -263,13 +269,13 @@ span {
   color: black;
 }
 
+/* tech cards */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 90%;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin: 40px auto 50px;
 }
 
 .card {
@@ -279,11 +285,16 @@ span {
 .card h1 {
   margin: 0;
   padding-bottom: 10px;
-  color: #FF4422;
+  color: #ff4422;
 }
 
 .card-image-container {
-  background: linear-gradient(132deg, rgba(44, 42, 42, 0.8) 0%, rgba(255,255,255,.01) 100%), url(assets/code.jpg);
+  background: linear-gradient(
+      132deg,
+      rgba(44, 42, 42, 0.8) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    ),
+    url(assets/code.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -298,15 +309,14 @@ span {
   height: inherit;
 }
 
-.card-category, .card-author {
-  margin: 0;
-  margin-left: 10px;
+.card-category,
+.card-author {
+  margin: 0 auto auto 10px;
   padding: 2px;
 }
 
 .card-description {
-  margin: 0;
-  margin-left: 10px;
+  margin: 0 auto auto 10px;
   font-size: 2vw;
 }
 
@@ -314,11 +324,9 @@ span {
   color: rgb(219, 211, 211);
 }
 
-
 .card-list-description {
   position: relative;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto 0;
   padding: 1px 10px 1px;
   background-color: rgb(241, 191, 191);
   font-size: 25px;
@@ -337,7 +345,7 @@ span {
 .card ul {
   color: grey;
   margin: auto;
-  padding: 10px;  
+  padding: 10px;
 }
 
 .card li:first-child {
@@ -350,11 +358,12 @@ span {
   list-style: none;
 }
 
+/* card deals*/
+
 .card-deals {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .card-deal {
@@ -376,6 +385,8 @@ span {
   margin: 0;
 }
 
+/* footers */
+
 .top-footer {
   height: 200px;
   background-color: rgb(83, 79, 79);
@@ -384,13 +395,13 @@ span {
 .top-footer ul {
   display: flex;
   flex-direction: row;
-justify-content: center;
-color: rgb(216, 209, 209);
+  justify-content: center;
+  color: rgb(216, 209, 209);
 }
 
 .top-footer li {
-list-style: none;
-padding-left: 10px;
+  list-style: none;
+  padding-left: 10px;
 }
 
 .social {
@@ -404,7 +415,6 @@ padding-left: 10px;
   border-radius: 60px;
   background-color: rgb(238, 230, 230);
   padding: 0.3em 0.3em;
-  margin: 10px;
 }
 
 .bottom-footer {
@@ -416,7 +426,6 @@ padding-left: 10px;
 }
 
 @media screen and (max-width: 1020px) {
-
   .nav-top .top-right {
     display: none;
   }
@@ -426,11 +435,11 @@ padding-left: 10px;
   }
 
   .fundings {
-   grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .funding:nth-child(4) {
-   display: none;
+    display: none;
   }
 
   .cards {
@@ -443,13 +452,12 @@ padding-left: 10px;
 }
 
 @media screen and (max-width: 800px) {
-
   .nav-top {
     display: none;
   }
 
   .nav-bottom .bottom-left li {
-   display: none;
+    display: none;
   }
 
   .fa-bars {
@@ -458,7 +466,7 @@ padding-left: 10px;
     padding-left: 5px;
   }
 
-  .main-articles  {
+  .main-articles {
     grid-template-columns: 1fr;
   }
 
@@ -480,7 +488,7 @@ padding-left: 10px;
     width: 75px;
     padding-top: 0;
   }
-  
+
   .news-article {
     display: flex;
     align-items: flex-start;
@@ -500,17 +508,21 @@ padding-left: 10px;
     font-weight: lighter;
     color: black;
   }
-  
+
   .fundings {
-   grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .funding:nth-child(4) {
     display: none;
-   }
+  }
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .card-description {
+    font-size: 20px;
   }
 
   .card-deals {
